@@ -1,6 +1,16 @@
-# Resnet_hekaiming
-Everything about resnet in the video you can find here
+# 关于代码怎么运行的说明：
 
-if you want know more, you can subscibe my wechat official account:follow_bobo, my 知乎：蒋竺波 
+注:tensorflow 我用的是1.1
+(1)你会看到两个文件：main_resnet.py, resnet.py
+(2)打开main_resnet.py, 定义好你的：batch_size，nb_classes，nb_epoch
+(3)Training with Scratch, 就是没有加载Pretrain model 的，注释掉374行，选择375行
+(4) Training with Pretrained model, 注释掉375行，选择374行
+(5)然后在378行load model.
 
-if want to know how to use resnet code in this folder, refer to my wechat official account or 知乎
+pretraining model with 50 layers for imagenet 地址 :
+WEIGHTS_PATH = 'https://github.com/fchollet/deep-learning-models/releases/download/v0.2/resnet50_weights_tf_dim_ordering_tf_kernels.h5'
+
+更多精彩内容请关注：
+本人公众号：follow_bobo
+知乎：蒋竺波
+知乎专栏：卷积神经网络（CNN）入门讲解
